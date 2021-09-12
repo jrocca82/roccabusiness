@@ -213,6 +213,10 @@ nav ul li {
   border: solid 1px #525252;
 }
 
+nav ul li:hover{
+  transform: scale(1.125)
+}
+
 /*-----------------Main------------------*/
 main{
   display: flex;
@@ -260,9 +264,17 @@ main{
 }
 
 .portfolio figure{
+  display: flex;
   border: solid 1px #525252;
   box-shadow: 1px 1px #525252;
   padding: 1rem;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.portfolio img{
+  border: solid 1px #525252;
+  box-shadow: 1px 1px #525252;
 }
 
 .portfolio figcaption{
@@ -327,78 +339,69 @@ footer {
 /*======================
 ----Portfolio Page------
 =======================*/
-.hero-area-portfolio {
+#web-portfolio,
+#design-portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 1rem;
+  width: 80%;
 }
 
-.contentwrapper-portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: white;
-  margin: 1.4rem 0;
-}
-
-.hero-text-portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+.text{
   text-align: center;
 }
 
-.hero-text-portfolio h2 {
-  margin: 0.25rem 0 0 0;
-  font-family: "Parisienne", cursive;
+h2{
   font-weight: lighter;
-  color: #47d6d6;
-  font-size: 5rem;
-  text-shadow: 1px 1px #525252;
 }
 
-.portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+.linked:hover {
+  transform: scale(1.125)
 }
 
-.portfolio-item {
+.web-dev-portfolio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.dev-item,
+.design-item{
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   border: solid 1px #525252;
-  box-shadow: 2px 2px #525252;
-  width: 80%;
-  margin: 2rem;
-  padding: 0;
+  text-align: center;
+  margin: 2rem auto;
 }
 
-.portfolio-item a {
+figure{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.portfolio-item img {
+img{
+  width: 100%;
   border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-  width: 80%;
+  margin: 1rem auto;
 }
 
-.portfolio-item p{
-  width: 85%;
+img:hover{
+  transform: scale(1.125)
 }
 
-.portfolio img {
-  width: 85%;
-  margin: 1rem;
+figcaption {
+  margin: auto 1rem;
 }
+
+
 
 /* ==========================================================================
    Helper classes
