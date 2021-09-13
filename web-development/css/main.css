@@ -100,6 +100,7 @@ body {
 
 h1{
   font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 nav li {
@@ -345,27 +346,35 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
+  width: 100%;
+}
+
+#web-portfolio{
+  background-color: #b6efef;
+}
+
+#design-portfolio{
+  background-color: #fbea8f;
+}
+
+.design-portfolio,
+.dev-portfolio{
+  width: 76%;
 }
 
 .text{
   text-align: center;
+  padding: 1rem;
 }
 
-h2{
+.text h2{
   font-weight: lighter;
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
 }
 
 .linked:hover {
   transform: scale(1.125)
-}
-
-.web-dev-portfolio{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
 }
 
 .dev-item,
@@ -378,6 +387,7 @@ h2{
   border: solid 1px #525252;
   text-align: center;
   margin: 2rem auto;
+  background-color: white;
 }
 
 figure{
@@ -398,11 +408,8 @@ img:hover{
 }
 
 figcaption {
-  margin: auto 1rem;
+  padding: 1rem;
 }
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -511,6 +518,7 @@ header {
 
 header .content-wrapper{
   justify-content: space-between;
+  border-bottom: solid 1px #525252;
 }
   .title {
     width: 60%;
@@ -678,19 +686,39 @@ main .content-wrapper{
     width: 18%;
   }
 
-  /*================Portfolio Page==============*/
-  .hero-area-portfolio {
-    width: 66%;
+  /*======================
+  ----Portfolio Page------
+  =======================*/
+  #web-portfolio,
+  #design-portfolio {
+    margin: auto 2rem;
+    padding: 2rem;
   }
 
-  .hero-area-portfolio p{
-    font-size: 2rem;
+  .design-portfolio,
+  .dev-portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "item1 item1"
+    "item2 item3"
+    "item4 item5"
+    "item6 item7";
+    grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+    grid-template-rows: repeat(28rem);
+    margin: 1.33333rem;
   }
 
-  .portfolio-item p{
-    font-size: 1.5rem;
+  .design-portfolio figure,
+  .dev-portfolio figure{
+    max-height:100%;
+    max-width: 100%;
   }
-}
+
+  img{
+    max-height:100%;
+    max-width: 100%;
+  }
 
 @media only screen and (min-width: 1200px) {
   /*-------------Base Styles--------------------*/
@@ -856,6 +884,24 @@ nav ul li{
   .portfolio-item p {
     width: 90%;
     padding: 2rem;
+  }
+  /*======================
+  ----Portfolio Page------
+  =======================*/
+  .design-portfolio,
+  .dev-portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3"
+    "item1 item2 item3"
+    "item1 item2 item3";
+    grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
+  }
+  .text h2{
+    font-weight: lighter;
+    font-family: "Parisienne", cursive;
+    font-size: 3.3333rem;
   }
 }
 
