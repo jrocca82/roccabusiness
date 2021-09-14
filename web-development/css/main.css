@@ -235,6 +235,7 @@ main{
   margin-top: 1rem;
   border-top: solid 1px #525252;
   border-bottom: solid 1px #525252;
+  background-color: #b6efef;
 }
 
 .hero .content-wrapper {
@@ -252,8 +253,6 @@ main{
 .hero-text h2 {
   font-family: "Parisienne", cursive;
   font-weight: lighter;
-  color: #47d6d6;
-  text-shadow: 1px 1px #525252;
   margin: 1rem auto;
 }
 
@@ -271,6 +270,7 @@ main{
   padding: 1rem;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: white;
 }
 
 .portfolio img{
@@ -294,7 +294,6 @@ main{
   align-items: center;
   flex-flow: row wrap;
   margin: 1rem auto;
-  background-color: white;
   border: solid 1px #525252;
   width: 75%;
   box-shadow: 2px 2px #525252;
@@ -346,7 +345,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
+  border: solid 1px #525252;
+  box-shadow: 1px 1px #525252;
+  margin: 2rem auto;
 }
 
 #web-portfolio{
@@ -409,6 +411,141 @@ img:hover{
 
 figcaption {
   padding: 1rem;
+}
+
+/*======================
+----Pricing Page------
+=======================*/
+.packages-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #b6efef;
+  width: 90%;
+  border: solid 1px #525252;
+  box-shadow: 1px 1px #525252;
+  margin: 1rem auto;
+}
+
+.packages-hero h2{
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.packages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.package-item{
+  background-color: white;
+  width: 76%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.package-item h4{
+  font-size: 1.666rem;
+  margin: 1rem;
+}
+
+.package-item h3{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.package-item h5{
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.package-description{
+  background-color: #fbea8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.deliverables {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.package-description ul{
+  list-style: square;
+  margin: 0;
+}
+
+.package-description p{
+  margin: 1rem 0 0 0;
+  text-align: center;
+}
+
+.premium {
+  border: solid 3px black;
+  box-shadow: 2px 2px #525252;
+}
+/*======================
+----Contact Page------
+=======================*/
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #b6efef;
+  width: 90%;
+  border: solid 1px #525252;
+  box-shadow: 1px 1px #525252;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.form-title h2 {
+  font-family: "Parisienne", cursive;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+form{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin: 1rem auto;
+}
+
+.select-package{
+  display: flex;
+  flex-flow: column;
+}
+
+.text-input {
+  margin: 0.5rem auto;
+  width: 90%;
+  height: 2rem;
+}
+
+label{
+  margin: 1rem;
+}
+
+.message {
+  height: 10rem;
+}
+
+button{
+  background-color: #fbea8f
 }
 /* ==========================================================================
    Helper classes
@@ -691,8 +828,8 @@ main .content-wrapper{
   =======================*/
   #web-portfolio,
   #design-portfolio {
-    margin: auto 2rem;
     padding: 2rem;
+    margin: 2rem;
   }
 
   .design-portfolio,
@@ -718,6 +855,13 @@ main .content-wrapper{
   img{
     max-height:100%;
     max-width: 100%;
+  }
+
+  /*======================
+  ----Pricing Page------
+  =======================*/
+  .packages-hero h2{
+    font-size: 2.66666rem;
   }
 
 @media only screen and (min-width: 1200px) {
@@ -903,6 +1047,63 @@ nav ul li{
     font-family: "Parisienne", cursive;
     font-size: 3.3333rem;
   }
+  /*======================
+  ----Pricing Page------
+  =======================*/
+  .packages-hero{
+    width: 90%;
+  }
+
+  .packages-hero h2{
+    font-size: 3.33333rem;
+  }
+
+  .packages{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3"
+    "item1 item2 item3"
+    "item1 item2 item3";
+    grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
+    grid-column-gap: 1rem;
+  }
+
+  .package-item{
+    width: 90%;
+    align-self: flex-start;
+  }
+
+  .package-item h4{
+    font-size: 2rem;
+  }
+
+  .package-item h3{
+    font-size: 2.25rem;
+  }
+  /*======================
+  ----Contact Page------
+  =======================*/
+  form{
+    flex-flow: row wrap;
+  }
+
+  .select-package{
+    width: 90%;
+  }
+
+  .text-input {
+    width: 40%;
+  }
+
+  .message {
+    width: 100%;
+  }
+
+  .button{
+    width: 100%;
+  }
+
 }
 
 
