@@ -320,8 +320,126 @@ footer {
   border-top: solid 1px black;
   width: 100%;
 }
+/*===========================
+--------Curriculum Landing Page---------
+==============================*/
+.levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: solid 1px #525252;
+  width: 100%;
+}
 
+.level-card {
+  width: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: solid 1px #525252;
+  margin: 1rem auto;
+}
 
+.yellow-card {
+  background-color: #fbea8f;
+}
+
+.blue-card{
+  background-color: #b6efef;
+}
+
+.level-title {
+  background-color: white;
+  border: solid 1px #525252;
+  margin: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+.levels p {
+  width: 60%;
+}
+
+.free-trials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  width: 76%;
+}
+
+.trial-lesson{
+  width: 100%;
+  margin: 3rem auto;
+}
+
+.trial-lesson h2{
+  font-weight: lighter;
+}
+
+.lesson{
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden;
+}
+
+.lesson iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*===========================
+--------Unit Landing Page---------
+==============================*/
+.units {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: solid 1px #525252;
+  width: 100%;
+  text-align: center;
+}
+
+.units h2{
+  width: 100%;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.unit-card {
+  width: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: solid 1px #525252;
+  margin: 1rem auto;
+}
+
+.unit-title {
+  background-color: white;
+  border: solid 1px #525252;
+  margin: 1rem;
+  width: 45%;
+  text-align: center;
+}
+
+.units p{
+  width: 45%;
+  text-align: center;
+}
+
+.units i{
+font-size: 4em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -445,7 +563,7 @@ footer {
   nav {
     width: 100%;
     flex-flow: row wrap;
-    border-top: solid 1px #525252;
+    border-bottom: solid 1px #525252;
   }
 
   nav ul {
@@ -551,6 +669,32 @@ footer {
     width: 60%;
     text-align: left;
   }
+
+  /*===========================
+  --------Curriculum Landing Page---------
+  ==============================*/
+  .level-card {
+    width: 40%;
+  }
+
+  /*===========================
+  --------Unit Landing Page---------
+  ==============================*/
+  .unit-card {
+    width: 25%;
+  }
+
+  .unit-title {
+    width: 78%;
+  }
+
+  .units p{
+    width: 78%;
+  }
+
+  .units i{
+  font-size: 4.666em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -632,6 +776,74 @@ main .content-wrapper{
 
   .about img{
     margin: 1rem auto;
+  }
+  /*===========================
+  --------Curriculum Landing Page---------
+  ==============================*/
+  .levels {
+    margin: 1rem;
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3 item4 item5 item6";
+    grid-column-gap: 1rem;
+  }
+
+  .level-card {
+    height:100%;
+    width: 100%;
+  }
+
+  .level-title {
+    background-color: white;
+    border: solid 1px #525252;
+    margin: 1rem;
+    width: 67%;
+    text-align: center;
+  }
+
+  .levels p {
+    width: 67%;
+  }
+
+  .free-trials {
+    border-top: solid 1px #525252;
+    width:100%;
+  }
+
+  .trial-lesson{
+    width: 75%;
+    margin: 3rem auto;
+  }
+
+  .trial-lesson h2{
+    font-size: 2.6666rem;
+  }
+
+  /*===========================
+  --------Unit Landing Page---------
+  ==============================*/
+  .units {
+    margin: 1rem;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+    "item9 item10 item11 item12";
+    grid-gap: 2rem;
+  }
+
+  .units h2{
+    grid-area: header;
+  }
+
+  .unit-card {
+    height:100%;
+    width: 100%;
+  }
+
+  .units i{
+  font-size: 8em;
   }
 }
 
