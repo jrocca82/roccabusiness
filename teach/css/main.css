@@ -366,14 +366,37 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row wrap;
   text-align: center;
   width: 76%;
 }
 
-.trial-lesson{
+.free-trials h3{
   width: 100%;
+}
+
+.free-trials ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.free-trials #list-title{
+  width: 100%;
+  text-decoration: underline;
+}
+
+.free-trials ul li{
+  margin: 1rem;
+}
+
+.trial-lesson{
+  width: 76%;
   margin: 3rem auto;
+  border-top: solid 1px #525252;
 }
 
 .trial-lesson h2{
@@ -395,8 +418,17 @@ footer {
   height: 100%;
 }
 
+.download-pdf {
+  background-color: #47d6d6;
+  width: 40%;
+  margin: auto;
+  padding: 0 0.25rem;
+  border: solid 1px #525252;
+  font-weight: bold;
+}
+
 /*===========================
---------Unit Landing Page---------
+--------Level Landing Page---------
 ==============================*/
 .units {
   display: flex;
@@ -440,7 +472,49 @@ footer {
 .units i{
 font-size: 4em;
 }
+/*===========================
+--------Unit Landing Page---------
+==============================*/
+.lessons-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+}
 
+.lessons-wrapper h3{
+  width: 100%;
+}
+
+.lessons-wrapper ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.lessons-wrapper #list-title{
+  width: 100%;
+  text-decoration: underline;
+}
+
+.lessons-wrapper ul li{
+  margin: 1rem;
+}
+
+.lesson-descript{
+  width: 76%;
+  margin: 3rem auto;
+  border-top: solid 1px #525252;
+}
+
+.lesson-descript h2{
+  font-weight: lighter;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
