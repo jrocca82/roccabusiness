@@ -1,0 +1,96 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  margin-top: 2rem;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 20%;
+  border-right: solid;
+  }
+
+#navbar header{
+  text-align: center;
+  font-size: 2rem;
+}
+
+#navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 0;
+}
+
+#navbar li{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: solid 1px black;
+  margin: 0;
+  width: 100%;
+}
+
+#navbar a{
+  padding: 1rem;
+}
+
+#main-doc{
+    display: flex;
+    justify: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 75%;
+    margin-left: 20rem;
+  }
+
+.main-section{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 90%;
+  line-height: 2rem;
+}
+
+.main-section header{
+  font-size: 2.5rem;
+}
+
+.main-section article{
+  margin-bottom: 3rem;
+}
+
+.main-section ul li{
+  margin-bottom: 1rem;
+}
+
+code{
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2rem;
+  background-color: #e3e3e3;
+  padding: 0.75rem;
+  margin: 0 0.75rem;
+}
+
+
+
+@media only screen and (max-width:768px){
+  body{
+    flex-flow: column;
+  }
+}

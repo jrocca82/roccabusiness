@@ -1,0 +1,101 @@
+body{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: white;
+  font-size: 18px;
+  font-family: "Poppins"
+}
+
+#survey-form {
+  background-color: #272746;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+.form-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  margin: 1rem;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.list label{
+  width: 100%;
+}
+
+.list label input{
+  width: 20%;
+}
+
+#name-label input,
+#email-label input,
+#number-label input{
+  padding: 0.25rem;
+  font-family: "Poppins";
+  margin: 0.75rem auto;
+  width: 11rem;
+}
+
+select{
+  font-family: "Poppins";
+  padding: 0.5rem;
+  width: 12rem;
+  color: #525252;
+}
+
+textarea{
+  width: 93%;
+  height: 5rem;
+  font-family: "Poppins"
+}
+
+button{
+  width: 93%;
+  padding: 0.5rem;
+  background-color: #34ac64;
+  font-family: "Poppins";
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #name-label input,
+  #email-label input,
+  #number-label input{
+    width: 17rem;
+  }
+
+  select{
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+    #name-label input,
+  #email-label input,
+  #number-label input{
+    width: 28rem;
+  }
+
+  select{
+    width: 29rem;
+  }
+}

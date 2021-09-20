@@ -1,0 +1,203 @@
+html, body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#welcome-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #303841;
+  overflow-y: auto;
+  height: 100vh;
+  text-align: center;
+}
+
+#welcome-section h1{
+  font-size: 3rem;
+}
+
+#welcome-section h2{
+  color: #be3144;
+  font-weight: lighter;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #be3144;
+}
+
+#navbar ul{
+  width: 30%;
+  margin-right: 1rem;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #45567d;
+}
+
+#projects{
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "footer footer footer";
+  grid-gap: 2rem;
+  padding-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+  text-align: center;
+  margin: 2rem;
+}
+
+#projects h3{
+  grid-area: header;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.project-tile{
+  background-color: #303841;
+  padding-bottom: 2rem;
+}
+
+figure{
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+  margin: 0;
+  height: 75%;
+}
+
+figcaption{
+  width: 100%;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.button{
+  grid-area: footer;
+  text-align: center;
+}
+
+button{
+  background-color: #303841;
+  color: white;
+  font-family: "Poppins", san-serif;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: none;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #303841;
+  text-align: center;
+}
+
+#contact h1{
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+#contact p{
+  width: 100%;
+  font-weight: lighter;
+}
+
+.social-link{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#contact ul{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  padding-bottom: 1.5rem;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 2rem;
+  border-top: solid 3px #be3144;
+  background-color: #303841;
+}
+
+footer p{
+  width: 60%;
+  font-weight: lighter;
+}
+
+#copyright{
+  width: 20%;
+}
+
+@media and screen only (max-width:400px){
+  #projects{
+    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+  }
+
+  footer{
+  flex-flow: column;
+  }
+
+  footer p{
+    width: 100%;
+  }
+}
