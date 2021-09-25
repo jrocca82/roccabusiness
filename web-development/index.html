@@ -21,84 +21,67 @@
 
   <meta name="theme-color" content="#fafafa">
 
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kranky&family=Parisienne&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kranky&family=Parisienne&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/b21915d81d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="content-wrapper">
-        <div class="title">
-          <a href="../index.html"><img src="img/rocca-logo.jpg" alt="Rocca Logo"/></a>
-          <h1>Rocca Web</h1>
-        </div>
-        <div class="contacts">
-          <div class="social">
-            <a href="https://github.com/jrocca82" target="_blank"><img src="img/github-logo.png" alt="GitHub Logo"/></a>
-            <a href="https://www.linkedin.com/in/jo-rocca/" target="_blank"><img src="img/linkedin-logo.png" alt="LinkedIn Logo"/></a>
-            <a href="https://twitter.com/JoRocca2" target="_blank"><img src="img/twitter-logo.jpg" alt="Twitter Logo"/></a>
-          </div>
-          <div class="email">
-            <a href="mailto:info@roccabusiness.com"><p>info@roccabusiness.com</p></a>
-          </div>
-        </div>
-        <aside>
-          <nav>
-            <ul>
-              <li><a href="portfolio/index.html">Portfolio</a></li>
-              <li><a href="pricing/index.html">Pricing</a></li>
-              <li><a href="contact/index.html">Contact</a></li>
-            </ul>
-          </nav>
-        </aside>
-      </div>
+      <a href="../index.html"><img src="img/logo.png" alt="Rocca Logo" class="rocca-logo"/></a>
+      <h1>Rocca Web</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <div class="content-wrapper">
-      <article class="hero">
-        <div class="content-wrapper">
-          <div class="hero-text">
-            <h2><a href="portfolio/index.html">Portfolio</a></h2>
-            <p>From conception to launch, from design to development, Rocca Web can help you build a professional website focused on seamless user experiences. See some examples of work in the <a href="portfolio/index.html">portfolio</a>. <br><br>To see more of our design and development services, including logos, business cards, and more, see our <a href="pricing/index.html">pricing</a>.</p>
-          </div>
-          <div class="portfolio">
-            <figure>
-                <a href="portfolio/index.html" class="item1"><img src="img/profile-website.jpg" alt="one page website"/></a>
-                <figcaption>A basic one-page website, with links that jump to relevant areas on the page.</figcaption>
-            </figure>
-            <figure class="item2">
-                <a href="portfolio/index.html"><img src="img/recipe-website.jpg" alt="card style website"/></a>
-                <figcaption>A basic one-page website, showcasing three different recipe cards with similar styling to maintain a consistent look and feel.</figcaption>
-            </figure>
-            <figure class="item3">
-                <a href="portfolio/index.html"><img src="img/rogue-pickings-website.jpg" alt="responsive website"/></a>
-                <figcaption>A website designed to be responsive to mobile, tablet, and desktop displays.</figcaption>
-            </figure>
-          </div>
-        </div>
+      <section class="hero">
+        <h2>Hi! I'm Jo!</h2>
+        <h3><em>A web designer and developer</em></h3>
+      </section>
+
+      <article id="about">
+        <img src="img/me-studying.jpg" alt="Photo of Me"/>
+        <p>I started coding as a teacher to create a <a href="../teaching/index.html" target="_blank" class="callout-link">website for teachers</a> to easily share resources. I really enjoyed making this website and started coding more seriously by formally learning HTML, CSS, and JavaScript. You can see some of my qualifications in these areas on my <a href="https://www.linkedin.com/in/jo-rocca/" target="_blank" class="callout-link">LinkedIn Profile</a>.</p>
+        <p>I also learned how to use <a href="https://jrocca82.github.io" target="_blank" class="callout-link">Git and GitHub</a> to easily track web development projects. You can see some of these projects in my <a href="#portfolio" class="callout-link">portfolio</a> below. I would love to <a href="#contact" class="callout-link">hear from you</a> and discuss how I can help you with your next web development project.</p>
       </article>
 
-      <article class="about">
-        <div class="content-wrapper">
-            <h3>About Me</h3>
-            <img src="img/me-studying.jpg" alt="Photo of Me"/>
-            <p>I started coding as a teacher, creating <a href="../teaching/index.html" target="_blank">my own website</a> to easily share resources with other online teachers. Now I follow two dream careers&dash; coding and teaching! I use visual design principles, HTML, and CSS to create beautiful, responsive websites. In fact, the web page you are on right now was created by me! Check out more websites I've created in my <a href="portfolio/index.html">portfolio</a>, or check out my <a href="https://www.github/com/jorocca82" target="_blank">GitHub Profile</a> to see more. You can also see more of my qualifications, including web design certifications, on my <a href="https://www.linkedin/in/jo-rocca" target="_blank">LinkedIn Profile</a>.</p>
-          </div>
+      <article id="portfolio">
+        <h2>Portfolio</h2>
+        <p>My web development skills include HTML, CSS, JavaScript, and Git. Check out a gallery of my web development projects from GitHub.</p>
+        <a href="https://jrocca82.github.io/github-repo-gallery/" target="_blank">Go to Gallery</a>
+        <p>I also do some design through tools such as Photoshop, Figma, and InDesign to help make your site beautiful. Check out a gallery of my design projects including logos, business cards, and web designs.</p>
+        <a href="#" target="_blank">See Designs</a>
+      </article>
+
+      <article id="contact">
+        <h2>Find me on social media...</h2>
+        <div class="social">
+          <a href="https://github.com/jrocca82" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/jo-rocca/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/JoRocca2" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <p>...or send an email to <a href="mailto:info@roccabusiness.cominfo@roccabusiness.com">info@roccabusiness.com</a></p>
       </article>
     </div>
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="copyright">
+    <div class="content-wrapper">
         <p> Copyright &copy; Rocca Business 2021</p>
-      </div>
-      <div class="legal">
         <a href="https://www.termsfeed.com/live/a1c60bba-42bf-49cd-90bf-486e86f1926b"><p>Privacy Policy</p></a>
         <a href="https://www.termsfeed.com/live/611eb096-3f99-4136-a369-63c96da63e3f"><p>Terms of Use</p></a>
-      </div>
     </div>
   </footer>
 

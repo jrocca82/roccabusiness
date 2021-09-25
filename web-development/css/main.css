@@ -95,27 +95,31 @@ body {
   flex-flow: row wrap;
   font-family: "Josefin Slab", serif;
   font-size: 18px;
-  color: #525252;
+  color: #fff;
+  background-color: #525252;
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 1rem;
 }
 
 nav li {
   font-size: 1.333rem;
 }
 
-a{
-  color: #525252;
-  text-decoration: none;
-}
 h2 {
   font-size: 2.6666rem;
+  font-family: "Parisienne", cursive;
 }
+
 h3 {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 .content-wrapper {
@@ -126,6 +130,15 @@ h3 {
   width: 100%;
 }
 
+p{
+  text-align: left;
+  width: 80%;
+}
+
+a{
+  color: inherit;
+}
+
 /*-------------Header--------------------*/
 header {
   display: flex;
@@ -134,91 +147,46 @@ header {
   flex-flow: row wrap;
 }
 
-.title {
+.rocca-logo{
+  width: 4rem;
+}
+
+/*----Navigation Bar---*/
+nav{
+  width: 100%;
+  border-top: solid 1px #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 2.4rem 0.8rem 0 0;
-  width: 75%;
-}
-
-.title img {
-  width: 4em;
-}
-
-.title h1 {
-  margin: 0 1rem;
-  font-weight: lighter;
-  border-bottom: solid 1px #525252;
-}
-
-.contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  width: 75%;
-}
-
-.social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 65%;
-  margin: 1rem 0 0 3rem;
-}
-
-.social img {
-  width: 1.666666rem;
-}
-
-.email {
-  width: 100%;
-  text-align: center;
-  margin: 0 0 0 3rem;
-}
-
-.email p{
-  margin: 0.5rem auto;
-}
-
-.email a{
-  text-decoration: none;
-  color: #525252;
-}
-
-
-nav {
-  width: 100%;
-  font-size: 1.33333rem;
-  padding: 0;
-  margin: 0;
-}
+  }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row wrap;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 nav ul li {
-  margin: .5rem auto;
+  margin: .5rem;
   list-style: none;
   width: 8rem;
-  background-color: #f8dd4e;
-  padding: 0.25rem 0;
+  background-color: #43d6d6;
   border: solid 1px #525252;
 }
 
 nav ul li:hover{
-  transform: scale(1.125)
+  background-color: #29bdbd;
 }
 
-/*-----------------Main------------------*/
+nav ul li a{
+  text-decoration: none;
+  color: #525252;
+}
+
+/*-------Home Page Main------------------*/
 main{
   display: flex;
   justify-content: center;
@@ -226,98 +194,86 @@ main{
   flex-flow: row wrap;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-  margin-top: 1rem;
-  border-top: solid 1px #525252;
-  border-bottom: solid 1px #525252;
-  background-color: #b6efef;
-}
-
-.hero .content-wrapper {
-  width: 75%;
-}
-
-.hero-text {
+.hero{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  text-align: center;
-}
-
-.hero-text h2 {
-  font-family: "Parisienne", cursive;
-  font-weight: lighter;
-  margin: 1rem auto;
-}
-
-.portfolio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.portfolio figure{
-  display: flex;
-  border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-  padding: 1rem;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-color: white;
-}
-
-.portfolio img{
-  border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-}
-
-.portfolio figcaption{
-  text-align: center;
-}
-
-.portfolio .item2,
-.portfolio .item3{
-  visibility: collapse;
-  height: 0;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 1rem auto;
-  border: solid 1px #525252;
-  width: 75%;
-  box-shadow: 2px 2px #525252;
-}
-
-.about h3 {
-  font-size: 2rem;
-  font-weight: lighter;
+  border-top: solid 1px #fff;
   width: 100%;
+  height: 75vh;
+  color: #525252;
+  background-color: #f8dd4e;
+  }
+
+.hero p{
   text-align: center;
 }
 
-.about img {
-  width: 46%;
-  border-radius: 50%;
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*----About----*/
+#about{
+  height: 100vh;
+}
+#about img{
+  width: 50%;
+  margin-top: 2rem;
+  border-radius: 25%;
+}
+
+/*----Portfolio----*/
+#portfolio{
+  background-color: #43d6d6;
+  color: #525252;
+  height: 100vh;
+}
+
+#portfolio p{
+  margin: 0;
+}
+
+#portfolio a{
+  transform: scale(1.5);
+  background-color: #f8dd4e;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.25rem;
   border: solid 1px #525252;
+  width: 8rem;
+  text-align: center;
 }
 
-.about p{
-  width: 85%;
+#portfolio a:hover{
+  background-color: #f5d00d;
 }
 
-.about p a {
-  text-decoration: underline;
+/*----Contact----*/
+#contact{
+  background-color: #fff;
+  color: #525252;
+  height: 60vh;
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 52%;
+}
+
+.social i{
+  font-size: 3rem;
+}
+
+.social i:hover{
+  transform: scale(1.125);
 }
 
 /*--------------------Footer------------*/
@@ -325,228 +281,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  border-top: solid 1px black;
   width: 100%;
 }
 
-
-.legal a {
-  text-decoration: none;
-  color: #525252;
-}
-
-/*======================
-----Portfolio Page------
-=======================*/
-#web-portfolio,
-#design-portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 90%;
-  border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-  margin: 2rem auto;
-}
-
-#web-portfolio{
-  background-color: #b6efef;
-}
-
-#design-portfolio{
-  background-color: #fbea8f;
-}
-
-.design-portfolio,
-.dev-portfolio{
-  width: 76%;
-}
-
-.text{
-  text-align: center;
-  padding: 1rem;
-}
-
-.text h2{
-  font-weight: lighter;
-  font-family: "Parisienne", cursive;
-  font-size: 2rem;
-}
-
-.linked:hover {
-  transform: scale(1.125)
-}
-
-.dev-item,
-.design-item{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  border: solid 1px #525252;
-  text-align: center;
-  margin: 2rem auto;
-  background-color: white;
-}
-
-figure{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-img{
+footer p,
+footer a{
   width: 100%;
-  border: solid 1px #525252;
-  margin: 1rem auto;
-}
-
-img:hover{
-  transform: scale(1.125)
-}
-
-figcaption {
-  padding: 1rem;
-}
-
-/*======================
-----Pricing Page------
-=======================*/
-.packages-hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  background-color: #b6efef;
-  width: 90%;
-  border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-  margin: 1rem auto;
-}
-
-.packages-hero h2{
-  font-family: "Parisienne", cursive;
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-.packages{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-
-.package-item{
-  background-color: white;
-  width: 76%;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-
-.package-item h4{
-  font-size: 1.666rem;
-  margin: 1rem;
-}
-
-.package-item h3{
-  font-size: 2rem;
-  margin: 0;
-}
-
-.package-item h5{
-  font-size: 1rem;
-  margin: 1rem;
-}
-
-.package-description{
-  background-color: #fbea8f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  width: 90%;
-  margin-bottom: 1rem;
-}
-
-.deliverables {
-  margin: 0;
-  text-decoration: underline;
-}
-
-.package-description ul{
-  list-style: square;
-  margin: 0;
-}
-
-.package-description p{
-  margin: 1rem 0 0 0;
   text-align: center;
 }
 
-.premium {
-  border: solid 3px black;
-  box-shadow: 2px 2px #525252;
-}
-/*======================
-----Contact Page------
-=======================*/
-.contact-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #b6efef;
-  width: 90%;
-  border: solid 1px #525252;
-  box-shadow: 1px 1px #525252;
-  text-align: center;
-  margin: 2rem auto;
-}
-
-.form-title h2 {
-  font-family: "Parisienne", cursive;
-  font-weight: lighter;
-  margin-bottom: 0;
-}
-
-form{
-  width: 90%;
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  margin: 1rem auto;
-}
-
-.select-package{
-  display: flex;
-  flex-flow: column;
-}
-
-.text-input {
-  margin: 0.5rem auto;
-  width: 90%;
-  height: 2rem;
-}
-
-label{
-  margin: 1rem;
-}
-
-.message {
-  height: 10rem;
-}
-
-button{
-  background-color: #fbea8f
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -636,474 +379,100 @@ button{
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-
-  /*-------------Base Styles--------------------*/
-  h1{
-    font-size: 3.75rem;
-  }
-
-  h2 {
-    font-size: 3.33333rem;
-  }
-
   /*-------------Header--------------------*/
-header {
-  border-bottom: solid 1px #525252;
-  justify-content: space-between;
-  width: 100%;
-}
-
-header .content-wrapper{
-  justify-content: space-between;
-  border-bottom: solid 1px #525252;
-}
-  .title {
-    width: 60%;
-    justify-content: space-between;
-  }
-
-  .title img {
-    width: 5.5rem;
-    margin: auto 2.5rem;
-  }
-
-  .title h1 {
-    margin: 0;
-    border-bottom: none;
-  }
-
-  .contacts {
-    width: 23%;
-    margin: 2rem;
-  }
-
-  .social{
-    width: 100%;
-  }
-
-  .social img {
-    width: 2.5rem;
-}
-
-/*---------Navigation----------*/
-nav {
-  display: flex;
-  justify-content: flex-start;
-  position: fixed;
-  top: 200px;
-  left: 45px;
-}
-
-  /*-----------------Main------------------*/
-main{
-  width: 100%;
-  justify-content: flex-end;
-
-}
-
-main .content-wrapper{
-  display: flex;
-  width: 75%;
-  align-items: flex-start;
-}
-
-.hero {
-  border: solid 1px #525252;
-  width: 80%;
-  box-shadow: 5px 5px #b8b8b8;
-  margin: 2rem auto;
-}
-
-.hero .content-wrapper{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-areas:
-  "header header header"
-  "portfolio portfolio portfolio";
-}
-
-.hero-text{
-  grid-area: header;
-}
-
-.portfolio{
-    justify-self: center;
-    grid-area: portfolio;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-column-gap: 2rem;
-    grid-template-areas:
-    "item1 item2"
-    "item1 item2";
-    margin: 1rem;
-  }
-
-  .portfolio figure{
-    width: auto;
-    justify-self: center;
-    margin: 0;
-    align-self: flex-start;
-  }
-
-  .portfolio img{
-    justify-self: center;
-  }
-
-  .portfolio .item1{
-    grid-area: item1;
-  }
-
-  .portfolio .item3{
-    visibility: visible;
+  /*----About----*/
+  #about{
+    display: block;
     height: auto;
-    grid-area: item2;
   }
-
-  .about{
-    width: 100%;
-    border: none;
-    box-shadow: none;
-  }
-
-  .about .content-wrapper {
-    width: 75%;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas:
-    "figure header"
-    "content content";
-    border: solid 1px #525252;
-    padding: 1rem;
-    box-shadow: 1px 1px #525252;
-    margin: 1rem auto;
-  }
-
-  .about h3 {
-    grid-area: header;
-    text-align: center;
-  }
-
-  .about img {
-    grid-area: figure;
-    justify-self: center;
-    align-self: center;
-    margin: 1rem;
-    width: 100%;
-  }
-
-  .about p{
-    grid-area: content;
-    width: auto;
-    padding: 1rem;
-    margin: 0;
-  }
-  /*--------------------Footer------------*/
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    width: 90%;
-  }
-
-  .copyright {
-    order: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 82%;
-  }
-
-  .copyright p {
-    padding: 0 0 0 25%;
-  }
-
-  .legal {
-    order: 1;
-    width: 18%;
-  }
-
-  /*======================
-  ----Portfolio Page------
-  =======================*/
-  #web-portfolio,
-  #design-portfolio {
-    padding: 2rem;
+  #about img{
+    float: left;
     margin: 2rem;
   }
 
-  .design-portfolio,
-  .dev-portfolio{
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-    "item1 item1"
-    "item2 item3"
-    "item4 item5"
-    "item6 item7";
-    grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
-    grid-template-rows: repeat(28rem);
-    margin: 1.33333rem;
+  #about p{
+    margin-top: 5rem;
+  }
+  /*----Contact----*/
+  #contact {
+    flex-flow: column;
   }
 
-  .design-portfolio figure,
-  .dev-portfolio figure{
-    max-height:100%;
-    max-width: 100%;
-  }
-
-  img{
-    max-height:100%;
-    max-width: 100%;
-  }
-
-  /*======================
-  ----Pricing Page------
-  =======================*/
-  .packages-hero h2{
-    font-size: 2.66666rem;
-  }
-
-@media only screen and (min-width: 1200px) {
-  /*-------------Base Styles--------------------*/
-  h1{
+  .social i{
     font-size: 5rem;
   }
 
-  h2 {
-    font-size: 4rem;
+  #contact p{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
   }
 
-  /*-------------Header--------------------*/
-  .title {
-    width: 75%;
+  /*--------------------Footer------------*/
+  footer a{
+    width: 20%;
   }
+}
 
-  .title h1 {
-    margin-right: 20rem;
-  }
 
-  .contacts {
-    width: 18%;
-  }
-
-  .contacts .email{
+@media only screen and (min-width: 1200px) {
+  /*================Home Page==============*/
+  nav li {
     font-size: 1.5rem;
   }
 
-/*---------Navigation----------*/
-nav ul li{
-  width:11rem;
-}
-
-  /*-----------------Main------------------*/
-  main{
-    justify-content: flex-end;
-
+  h2 {
+    font-size: 3rem;
   }
 
-  main .content-wrapper{
-    width: 80%;
-    align-items: flex-start;
-  }
-
-  .hero {
-    width: 70%;
-    border: solid 3px #525252;
-  }
-
-  .hero .content-wrapper{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-areas:
-    "header header header"
-    "portfolio portfolio portfolio";
-  }
-
-  .hero-text{
-    grid-area: header;
-  }
-
-  .hero .content-wrapper .portfolio {
-      justify-self: center;
-      grid-area: portfolio;
-      display: grid;
-      grid-template-columns: 30% 30% 30%;
-      grid-column-gap: 2rem;
-      grid-template-areas:
-      "item1 item2 item3"
-      "item1 item2 item3";
-      margin: 1rem;
-    }
-
-    .portfolio figure{
-      width: auto;
-      justify-self: center;
-      margin: 0;
-      align-self: flex-start;
-    }
-
-    .portfolio img{
-      justify-self: center;
-    }
-
-    .portfolio .item2{
-      visibility: visible;
-      height: auto;
-      grid-area: item3;
-    }
-
-
-  .about {
-    width: 25%;
-    box-shadow: none;
-  }
-
-  .about .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about h3 {
-    text-align: center;
-  }
-
-  .about img {
-    grid-area: figure;
-    justify-self: center;
-    align-self: center;
-    margin: 1rem;
-    width: 70%;
-  }
-
-  /*================Portfolio Page==============*/
-  .hero-area-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 1rem;
-  }
-
-  .contentwrapper-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: white;
-    margin: 1.4rem 0;
-  }
-
-  .hero-text-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    text-align: center;
-  }
-
-  .hero-text-portfolio h2 {
-    margin: 0.25rem 0 0 0;
-    font-family: "Parisienne", cursive;
-    font-weight: lighter;
-    color: #47d6d6;
-    font-size: 5rem;
-    text-shadow: 1px 1px #525252;
-  }
-
-  .portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-flow: row wrap;
-    width: 85%;
-  }
-
-  .portfolio-item {
-    width: 42%;
-  }
-
-  .portfolio-item p {
-    width: 90%;
-    padding: 2rem;
-  }
-  /*======================
-  ----Portfolio Page------
-  =======================*/
-  .design-portfolio,
-  .dev-portfolio{
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-    "item1 item2 item3"
-    "item1 item2 item3"
-    "item1 item2 item3";
-    grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
-  }
-  .text h2{
-    font-weight: lighter;
-    font-family: "Parisienne", cursive;
-    font-size: 3.3333rem;
-  }
-  /*======================
-  ----Pricing Page------
-  =======================*/
-  .packages-hero{
-    width: 90%;
-  }
-
-  .packages-hero h2{
-    font-size: 3.33333rem;
-  }
-
-  .packages{
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-    "item1 item2 item3"
-    "item1 item2 item3"
-    "item1 item2 item3";
-    grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
-    grid-column-gap: 1rem;
-  }
-
-  .package-item{
-    width: 90%;
-    align-self: flex-start;
-  }
-
-  .package-item h4{
+  h3 {
     font-size: 2rem;
   }
 
-  .package-item h3{
-    font-size: 2.25rem;
-  }
-  /*======================
-  ----Contact Page------
-  =======================*/
-  form{
-    flex-flow: row wrap;
+  p{
+    font-size: 1.3333rem;
   }
 
-  .select-package{
-    width: 90%;
+  /*-------------Header--------------------*/
+h1{
+  width: 80%;
+  text-align: left;
+}
+.rocca-logo{
+    width: 6rem;
+    margin: 1rem;
   }
 
-  .text-input {
-    width: 40%;
+  /*----Navigation Bar---*/
+  nav ul {
+    width: 80%;
+  }
+  /*----About----*/
+  #about img{
+    width: 30%;
+    margin: 2rem;
   }
 
-  .message {
+  /*----Portfolio----*/
+  #portfolio{
+    background-color: #43d6d6;
+    color: #525252;
+    height: 100vh;
+    flex-flow: column;
+  }
+
+  #portfolio p{
+    margin: 2rem;
+  }
+  /*----Contact----*/
+  #contact{
     width: 100%;
   }
 
-  .button{
-    width: 100%;
+  /*--------------------Footer------------*/
+  footer a{
+    width: 20%;
   }
-
 }
 
 
