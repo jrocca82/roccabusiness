@@ -94,6 +94,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #b8b8b8;
 }
 
 .content-wrapper{
@@ -106,38 +107,27 @@ body {
 }
 /*-------------Header--------------------*/
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   border-bottom: solid 1px black;
-  background: white;
-}
-
-header p {
-  width: 100%;
-  text-align:center;
-}
-
-header figure {
-  display: flex;
-  justify-content: center;
-  width: 23%;
 }
 
 header img {
-  width: 100%;
+  width: 4rem;
+  margin: 2rem;
 }
 
 header h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 2em;
-  font-weight: lighter;
+  color: #fff;
   text-align: center;
-  text-shadow: 1px 1px black;
-  width: 35%;
   margin: 0 auto;
 }
+
 /*-----------------Main------------------*/
 main{
   display: flex;
@@ -152,14 +142,14 @@ main{
   justify-content: center;
   align-items: center;
   border-left: solid 1px #525252;
-  background: url("../img/colored-pencils.png") no-repeat;
+  background: url("../img/colored-pencils.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 10%;
   width: 49.5%;
 }
 
 h3{
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: lighter;
   text-shadow: 0.5px 0.5px black;
   margin: 1.666rem auto;
@@ -167,14 +157,9 @@ h3{
   text-align: center;
 }
 
-h3:hover{
-  transform: scale(1.25)
-}
-
 a {
   text-decoration: none;
   color: #525252;
-  transform: none;
 }
 
 .web-development {
@@ -195,6 +180,7 @@ footer {
   text-align: center;
   border-top: solid 1px black;
   width: 100%;
+  background-color: #fff;
 }
 
 footer p {
@@ -293,13 +279,13 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   /*-----------------Header--------------*/
-figure {
-  width: 32%;
-  margin: 3rem auto;
+header img{
+  width: 5rem;
 }
 
 header h1{
-  font-size: 4rem;
+  font-size: 2.5rem;
+  width: 80%;
 }
   /*-----------------Main------------------*/
   h3{
@@ -308,30 +294,33 @@ header h1{
 }
 
 @media only screen and (min-width: 1200px) {
-  header {
+header{
+    width: 30%;
+    height: 100vh;
     border-bottom: none;
-    width: 39%;
-    background-size: cover;
-    background-position: left;
+    align-items: flex-start;
   }
 
-  header .content-wrapper {
-    flex-flow: column;
+  header .content-wrapper{
+    align-items: flex-start;
+    height: 100vh;
   }
 
-  .content-wrapper figure{
-    order: 2;
-    width: 50%;
+  header img{
+    margin-top: 8rem;
+    width: 8rem;
+    margin-bottom: 0;
   }
 
-  .content-wrapper h1 {
-    order: 1;
+  header h1{
+    margin: 0;
   }
 
-  /*-----------------Main------------------*/
-main {
-  width: 60%;
-}
+/*-----------------Main------------------*/
+  main {
+    width: 69%;
+    height: 100vh;
+  }
 
   .online-teaching {
     width: 100%;
@@ -340,6 +329,7 @@ main {
     background-size: cover;
     background-position: right;
     justify-content: flex-start;
+    height: 50vh;
   }
 
   .web-development {
@@ -349,17 +339,13 @@ main {
     background-size: cover;
     background-position: right;
     justify-content: flex-start;
+    height: 50vh;
   }
 
   h3{
     text-align: center;
     margin: 8rem 1rem 16rem 1rem;
   }
-
-  h3:hover {
-    transform: scale(1.125);
-  }
-
 }
 
 
