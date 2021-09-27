@@ -558,6 +558,49 @@ font-size: 4em;
 }
 
 /*===========================
+--------Resources Landing Page---------
+==============================*/
+#resources-page{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-areas:
+  "header header header"
+  "item1 item2 item3";
+  background-color: #525252;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+#resources-page h2{
+  grid-area: header;
+  font-family: "Kranky", cursive;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.game-container{
+  border: solid 1px #525252;
+  background-color: #fff;
+  height: 100%;
+  padding: 1rem;
+}
+
+.game-container h3{
+  color: #fb8a87;
+  font-family: "Quicksand", sans-serif;
+}
+
+.game-container a{
+  border: solid 1px #525252;
+  padding: 0.5rem;
+  background-color: #43d6d6;
+}
+
+.game-container a:hover{
+  background-color: #19bbbb;
+}
+
+/*===========================
 --------Blog Landing Page---------
 ==============================*/
 .articles{
