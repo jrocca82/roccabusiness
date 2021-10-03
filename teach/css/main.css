@@ -96,6 +96,7 @@ body {
   color: #525252;
   font-family: "Quicksand", san-serif;
   font-weight: lighter;
+  background-color: #525252;
 }
 
 .content-wrapper{
@@ -105,6 +106,10 @@ body {
   flex-flow: row wrap;
   width: 100%;
   margin: 0;
+}
+
+h1{
+  color: #fff;
 }
 
 h3{
@@ -127,6 +132,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  border-bottom: solid 1px #fff;
 }
 
 header .content-wrapper {
@@ -158,28 +165,23 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  width: 50%;
-  margin: 0 2rem;
+  width: 100%;
 }
 
-.social .social-icons {
+.social-icons {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
 }
 
-.social-icons li{
-  width: 1.666rem;
+.social li{
+  margin: auto 1rem;
+  display: inline;
 }
 
-.social-icons li img{
-  width: 100%;
+.social li a{
+  color: #fff;
+  font-size: 2rem;
 }
 
 nav {
@@ -352,6 +354,11 @@ footer {
   text-align: center;
   border-top: solid 1px black;
   width: 100%;
+  color: #fff;
+}
+
+footer a{
+  color: #fff;
 }
 /*===========================
 --------Curriculum Landing Page---------
@@ -410,6 +417,12 @@ footer {
   flex-flow: row wrap;
   text-align: center;
   width: 76%;
+  color: #fff;
+}
+
+.free-trials p a{
+  color: #fff;
+  text-decoration: underline;
 }
 
 .free-trials h3{
@@ -485,6 +498,7 @@ footer {
   width: 100%;
   font-weight: lighter;
   font-size: 3rem;
+  color: #fff;
 }
 
 .unit-card {
@@ -523,6 +537,7 @@ font-size: 4em;
   flex-flow: row wrap;
   text-align: center;
   width: 100%;
+  color: #fff;
 }
 
 .lessons-wrapper h3{
@@ -547,6 +562,10 @@ font-size: 4em;
   margin: 1rem;
 }
 
+.lessons-wrapper a{
+  color: #fff;
+}
+
 .lesson-descript{
   width: 76%;
   margin: 3rem auto;
@@ -555,6 +574,7 @@ font-size: 4em;
 
 .lesson-descript h2{
   font-weight: lighter;
+  color: #fff;
 }
 
 /*===========================
@@ -566,7 +586,7 @@ font-size: 4em;
   grid-template-areas:
   "header header header"
   "item1 item2 item3";
-  background-color: #525252;
+  background-color: #fb8a87;
   grid-gap: 1rem;
   padding: 2rem;
 }
@@ -576,6 +596,10 @@ font-size: 4em;
   font-family: "Kranky", cursive;
   font-size: 3rem;
   color: #fff;
+}
+
+#resources-page .content-wrapper{
+  border-top: solid 1px #fff;
 }
 
 .game-container{
@@ -603,6 +627,10 @@ font-size: 4em;
 /*===========================
 --------Blog Landing Page---------
 ==============================*/
+h1 a{
+  color: #fff;
+}
+
 .articles{
   display: grid;
   grid-template-areas:
@@ -711,10 +739,15 @@ font-size: 4em;
 .resources-page{
   height: 100vh;
 }
+
 #resources-page{
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+#resources-page h2{
+  color: #525252;
 }
 
 /*======================
@@ -886,7 +919,7 @@ button{
   }
 
   .social {
-    width: 32%;
+    width: 50%;
   }
 
   nav {
@@ -1039,26 +1072,8 @@ button{
     font-size: 4rem;
   }
 
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 30%;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    list-style: none;
-    margin: 0 2rem;
-  }
-
-  .social-icons li{
-    width: 4rem;
+  .social li a{
+    font-size: 3rem;
   }
 
   nav ul li {
